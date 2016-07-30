@@ -8,6 +8,7 @@ import {ButtonTestPage} from './pages/button-test/button-test';
 import {CardTestPage} from './pages/card-test/card-test';
 import {IconTestPage} from './pages/icon-test/icon-test';
 import {InputTestPage} from './pages/input-test/input-test';
+import {ListTestPage} from './pages/list-test/list-test';
 
 
 @Component({
@@ -21,7 +22,8 @@ export class MyApp {
   card: any = CardTestPage;
   icon: any = IconTestPage;
   input: any = InputTestPage;
-  rootPage: any = this.input;
+  list: any = ListTestPage;
+  rootPage: any = this.list;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
