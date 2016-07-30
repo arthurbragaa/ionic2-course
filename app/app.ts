@@ -4,6 +4,7 @@ import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
 import {TestPage} from './pages/test/test';
 import {AlertPage} from './pages/alert/alert';
+import {ButtonTestPage} from './pages/button-test/button-test';
 
 
 @Component({
@@ -13,7 +14,8 @@ export class MyApp {
   home: any = HomePage;
   test: any = TestPage;
   alert: any = AlertPage;
-  rootPage: any = this.home;
+  button: any = ButtonTestPage;
+  rootPage: any = this.button;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
