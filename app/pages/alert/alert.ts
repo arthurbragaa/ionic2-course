@@ -20,7 +20,7 @@ export class AlertPage {
 
   showAlert(){
     let alert = Alert.create({
-      title: 'Nome',
+      title: 'Nome' ,
       message: 'Digite seu nome',
       inputs: [
         {

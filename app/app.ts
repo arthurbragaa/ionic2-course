@@ -6,6 +6,8 @@ import {TestPage} from './pages/test/test';
 import {AlertPage} from './pages/alert/alert';
 import {ButtonTestPage} from './pages/button-test/button-test';
 import {CardTestPage} from './pages/card-test/card-test';
+import {IconTestPage} from './pages/icon-test/icon-test';
+import {InputTestPage} from './pages/input-test/input-test';
 
 
 @Component({
@@ -17,7 +19,9 @@ export class MyApp {
   alert: any = AlertPage;
   button: any = ButtonTestPage;
   card: any = CardTestPage;
-  rootPage: any = this.card;
+  icon: any = IconTestPage;
+  input: any = InputTestPage;
+  rootPage: any = this.input;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
