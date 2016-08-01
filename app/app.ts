@@ -9,7 +9,8 @@ import {CardTestPage} from './pages/card-test/card-test';
 import {IconTestPage} from './pages/icon-test/icon-test';
 import {InputTestPage} from './pages/input-test/input-test';
 import {ListTestPage} from './pages/list-test/list-test';
-
+import {GridTestPage} from './pages/grid-test/grid-test';
+import {ModalTestPage} from './pages/modal-test/modal-test';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -23,12 +24,12 @@ export class MyApp {
   icon: any = IconTestPage;
   input: any = InputTestPage;
   list: any = ListTestPage;
-  rootPage: any = this.list;
+  grid: any = GridTestPage;
+  modal: any = ModalTestPage;
+  rootPage: any = this.modal;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
     });
   }
@@ -37,5 +38,6 @@ export class MyApp {
     this.rootPage = page;
   }
 }
+
 
 ionicBootstrap(MyApp);
