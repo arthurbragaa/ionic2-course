@@ -13,6 +13,7 @@ import {GridTestPage} from './pages/grid-test/grid-test';
 import {ModalTestPage} from './pages/modal-test/modal-test';
 import {NavigationTestPage} from './pages/navigation-test/navigation-test';
 import {TabsTestPage} from './pages/tabs-test/tabs-test';
+import {ToastTestPage} from './pages/toast-test/toast-test';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -30,7 +31,10 @@ export class MyApp {
   modal: any = ModalTestPage;
   navigation: any = NavigationTestPage;
   tabs: any = TabsTestPage;
-  rootPage: any = this.tabs;
+  toast: any = ToastTestPage;
+
+
+  rootPage: any = this.toast;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
