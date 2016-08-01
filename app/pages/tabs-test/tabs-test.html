@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tabs</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-tabs tabbarPlacement="bottom" selectedIndex="0">
+  <ion-tab tabIcon="star" [root]="homePage" tabBadge="5" tabBadgeStyle="danger"></ion-tab>
+  <ion-tab tabIcon="contacts" [root]="contatosPage"></ion-tab>
+</ion-tabs>
